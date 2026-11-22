@@ -1,0 +1,807 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+<meta name="google-site-verification" content="HoWofmErOOKMSn8dHeXvBTb5cGoEBEB1rQ7Y3CrUYgY" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="data:," />
+    <title>Calculateur de Pourcentage — Calculs de pourcentage gratuits en ligne</title>
+    <meta name="description" content="Calculez facilement tous vos pourcentages : pourcentage d'un nombre, variation, réductions pendant les soldes, augmentations et diminutions. Outils gratuits, instantanés, avec les formules expliquées en français." />
+    <link rel="canonical" href="https://pourcentagehub.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Calculateur de Pourcentage" />
+    <meta property="og:title" content="Calculateur de Pourcentage — Calculs de pourcentage gratuits en ligne" />
+    <meta property="og:description" content="Calculez facilement tous vos pourcentages : pourcentage d'un nombre, variation, réductions pendant les soldes, augmentations et diminutions. Outils gratuits et instantanés, formules expliquées en français." />
+    <meta property="og:url" content="https://pourcentagehub.github.io/" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Calculateur de Pourcentage" />
+    <meta name="twitter:description" content="Tous vos calculs de pourcentage en quelques secondes : réductions, variations, augmentations. Gratuit et en français." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "name": "Calculateur de Pourcentage",
+          "url": "https://pourcentagehub.github.io/",
+          "inLanguage": "fr"
+        },
+        {
+          "@type": "WebApplication",
+          "name": "Calculateur de Pourcentage",
+          "url": "https://pourcentagehub.github.io/",
+          "applicationCategory": "UtilitiesApplication",
+          "operatingSystem": "Any",
+          "inLanguage": "fr",
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+          "description": "Calculateur de pourcentage gratuit en ligne : pourcentage d'un nombre, variation en pourcentage, prix après réduction, augmentation et diminution d'un nombre."
+        },
+        {
+          "@type": "FAQPage",
+          "inLanguage": "fr",
+          "mainEntity": [
+            { "@type": "Question", "name": "Comment calculer 20 % de 150 ?", "acceptedAnswer": { "@type": "Answer", "text": "Multipliez 150 par 20, puis divisez par 100 : 150 × 20 ÷ 100 = 30. Donc 20 % de 150 font 30." } },
+            { "@type": "Question", "name": "Quelle est la formule de base d'un pourcentage ?", "acceptedAnswer": { "@type": "Answer", "text": "Pour trouver X % d'un nombre Y, la formule est : Y × X ÷ 100. Un pourcentage est simplement une fraction dont le dénominateur vaut 100." } },
+            { "@type": "Question", "name": "Comment savoir quel pourcentage un nombre représente d'un autre ?", "acceptedAnswer": { "@type": "Answer", "text": "Divisez le premier nombre par le second, puis multipliez par 100. Par exemple, 45 par rapport à 180 : 45 ÷ 180 × 100 = 25 %. Donc 45 représente 25 % de 180." } },
+            { "@type": "Question", "name": "Comment calculer un prix après une réduction de 30 % ?", "acceptedAnswer": { "@type": "Answer", "text": "Calculez d'abord le montant de la réduction (prix × 30 ÷ 100), puis soustrayez-le du prix initial. Pour un article à 80 € : la réduction vaut 24 € et le prix final est de 56 €. Astuce : multipliez directement le prix par 0,70." } },
+            { "@type": "Question", "name": "Comment calculer une augmentation de salaire en pourcentage ?", "acceptedAnswer": { "@type": "Answer", "text": "Soustrayez l'ancien salaire du nouveau, divisez le résultat par l'ancien salaire, puis multipliez par 100. Un passage de 1 800 € à 1 890 € donne (90 ÷ 1 800) × 100 = 5 % d'augmentation." } },
+            { "@type": "Question", "name": "Quelle est la différence entre un point de pourcentage et un pourcentage ?", "acceptedAnswer": { "@type": "Answer", "text": "Un point de pourcentage mesure l'écart direct entre deux pourcentages : passer de 10 % à 12 %, c'est +2 points. En pourcentage relatif, cette même hausse représente +20 %, car 2 ÷ 10 × 100 = 20 %." } },
+            { "@type": "Question", "name": "Comment retrouver un prix initial avant réduction ?", "acceptedAnswer": { "@type": "Answer", "text": "Divisez le prix réduit par (1 − taux de réduction). Un article payé 56 € après −30 % coûtait 56 ÷ 0,70 = 80 € avant la réduction." } },
+            { "@type": "Question", "name": "Comment calculer 10 % d'un nombre de tête ?", "acceptedAnswer": { "@type": "Answer", "text": "Déplacez simplement la virgule d'un rang vers la gauche : 10 % de 250, c'est 25. À partir de là, 20 % vaut le double (50) et 5 % la moitié (12,5)." } },
+            { "@type": "Question", "name": "Un pourcentage peut-il dépasser 100 % ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui. 100 % représente le tout ; au-delà, la quantité dépasse la référence. Par exemple, 250 représente 125 % de 200, et un prix qui passe de 50 € à 120 € a augmenté de 140 %." } },
+            { "@type": "Question", "name": "Comment retrouver le prix hors taxe à partir d'un prix TTC ?", "acceptedAnswer": { "@type": "Answer", "text": "Divisez le prix TTC par (1 + taux de TVA). Avec une TVA à 20 %, un prix de 120 € TTC correspond à 120 ÷ 1,20 = 100 € HT, soit 20 € de TVA." } }
+          ]
+        }
+      ]
+    }
+    </script>
+    <style>
+      :root {
+        --bg: #ffffff;
+        --bg-soft: #f2f5f8;
+        --ink: #17222d;
+        --ink-soft: #44536a;
+        --line: #d9e0e8;
+        --accent: #0b5cad;
+        --accent-strong: #084a8c;
+        --accent-soft: #e7f0fa;
+        --result-bg: #eef5ee;
+        --result-ink: #1c5c2e;
+        color-scheme: light;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #10161d;
+          --bg-soft: #182029;
+          --ink: #e9eef4;
+          --ink-soft: #a9b7c6;
+          --line: #2c3947;
+          --accent: #6fb0ec;
+          --accent-strong: #9cc8f5;
+          --accent-soft: #1b2c3f;
+          --result-bg: #17301d;
+          --result-ink: #9fd8a9;
+          color-scheme: dark;
+        }
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+        font-size: 1.0625rem;
+        line-height: 1.65;
+      }
+      h1, h2, h3 {
+        font-family: "Lora", Georgia, serif;
+        line-height: 1.25;
+        margin: 0 0 0.6em;
+      }
+      h1 { font-size: 2.1rem; font-weight: 700; }
+      h2 { font-size: 1.5rem; font-weight: 600; margin-top: 2.2rem; }
+      h3 { font-size: 1.18rem; font-weight: 600; margin-top: 1.6rem; }
+      p { margin: 0 0 1em; }
+      a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+      a:hover { color: var(--accent-strong); }
+      .wrap { max-width: 760px; margin: 0 auto; padding: 0 1.1rem; }
+
+      header.site {
+        border-bottom: 1px solid var(--line);
+        background: var(--bg);
+      }
+      .header-in {
+        max-width: 960px; margin: 0 auto; padding: 0.7rem 1.1rem;
+        display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 1.4rem;
+      }
+      .brand {
+        font-family: "Lora", Georgia, serif;
+        font-size: 1.25rem; font-weight: 700;
+        color: var(--ink); text-decoration: none;
+      }
+      .brand span { color: var(--accent); }
+      nav.main { display: flex; flex-wrap: wrap; gap: 0.2rem 0.4rem; margin-left: auto; }
+      nav.main a {
+        color: var(--ink); text-decoration: none; font-weight: 500;
+        padding: 0.55rem 0.7rem; border-radius: 6px; min-height: 2.75rem;
+        display: inline-flex; align-items: center;
+      }
+      nav.main a:hover { background: var(--bg-soft); color: var(--accent); }
+      nav.main a[aria-current="page"] { color: var(--accent); font-weight: 700; }
+
+      main { padding: 2rem 0 3rem; }
+      .page { display: none; }
+      .page.active { display: block; }
+      .lede { font-size: 1.13rem; color: var(--ink-soft); }
+
+      /* --- Calculators --- */
+      .calc {
+        border-top: 2px solid var(--line);
+        padding: 1.6rem 0 0.6rem;
+        margin-top: 2rem;
+      }
+      .calc h2 { margin-top: 0; font-size: 1.35rem; }
+      .calc .desc { color: var(--ink-soft); margin-bottom: 1.1rem; }
+      .fields {
+        display: flex; flex-wrap: wrap; gap: 0.9rem 1.2rem; align-items: flex-end;
+      }
+      .field { display: flex; flex-direction: column; gap: 0.3rem; }
+      .field label { font-size: 0.92rem; font-weight: 600; color: var(--ink-soft); }
+      .field input, .field select {
+        font: inherit; font-size: 1.1rem;
+        padding: 0.55rem 0.7rem; min-height: 3rem;
+        width: 10.5rem; max-width: 42vw;
+        border: 1.5px solid var(--line); border-radius: 8px;
+        background: var(--bg); color: var(--ink);
+      }
+      .field input:focus, .field select:focus {
+        outline: 2px solid var(--accent); outline-offset: 1px; border-color: var(--accent);
+      }
+      .field .unit { font-weight: 600; color: var(--ink-soft); padding-bottom: 0.7rem; }
+      .result {
+        margin-top: 1.2rem;
+        background: var(--result-bg); color: var(--result-ink);
+        border-radius: 8px; padding: 0.9rem 1.1rem;
+        font-size: 1.25rem; font-weight: 700;
+      }
+      .result .sub { display: block; font-size: 1rem; font-weight: 500; margin-top: 0.25rem; }
+      .formula { margin-top: 0.7rem; font-size: 0.95rem; color: var(--ink-soft); font-style: italic; }
+      .hint { margin-top: 0.7rem; font-size: 0.95rem; color: var(--ink-soft); }
+
+      /* --- Articles list --- */
+      .article-list { list-style: none; margin: 1.2rem 0 0; padding: 0; }
+      .article-list li { border-top: 1px solid var(--line); padding: 1.1rem 0; }
+      .article-list li:first-child { border-top: none; padding-top: 0.2rem; }
+      .article-list a.title {
+        font-family: "Lora", Georgia, serif; font-size: 1.22rem; font-weight: 600;
+      }
+      .article-list p { margin: 0.35rem 0 0; color: var(--ink-soft); }
+
+      article.prose p, article.prose li { max-width: 68ch; }
+      article.prose ul { margin: 0 0 1em; padding-left: 1.3rem; }
+      article.prose li { margin-bottom: 0.35rem; }
+      .backlink { display: inline-block; margin-bottom: 1.2rem; font-weight: 600; }
+
+      /* --- FAQ --- */
+      details.faq {
+        border-top: 1px solid var(--line);
+        padding: 0.4rem 0;
+      }
+      details.faq:last-of-type { border-bottom: 1px solid var(--line); }
+      details.faq summary {
+        cursor: pointer; font-weight: 600; font-size: 1.05rem;
+        padding: 0.75rem 0.2rem; min-height: 2.75rem;
+        display: flex; align-items: center;
+        list-style: none;
+      }
+      details.faq summary::-webkit-details-marker { display: none; }
+      details.faq summary::after { content: "+"; margin-left: auto; color: var(--accent); font-size: 1.3rem; font-weight: 700; }
+      details.faq[open ] summary::after { content: "–"; }
+      details.faq .answer { padding: 0 0.2rem 0.9rem; color: var(--ink-soft); }
+      details.faq .answer p { margin: 0; }
+
+      .mailbtn {
+        display: inline-flex; align-items: center; min-height: 3rem;
+        background: var(--accent); color: #fff; text-decoration: none;
+        font-weight: 600; padding: 0.6rem 1.2rem; border-radius: 8px;
+      }
+      .mailbtn:hover { background: var(--accent-strong); color: #fff; }
+
+      footer.site {
+        border-top: 1px solid var(--line);
+        background: var(--bg-soft);
+        padding: 1.8rem 0 2.2rem; margin-top: 1rem;
+        font-size: 0.95rem; color: var(--ink-soft);
+      }
+      footer.site nav { display: flex; flex-wrap: wrap; gap: 0.3rem 1.2rem; margin-bottom: 0.9rem; }
+      footer.site nav a { padding: 0.4rem 0; display: inline-block; min-height: 2.4rem; }
+
+      @media (max-width: 560px) {
+        h1 { font-size: 1.7rem; }
+        h2 { font-size: 1.32rem; }
+        .field input, .field select { width: 9rem; }
+        nav.main { margin-left: 0; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site">
+      <div class="header-in">
+        <a class="brand" href="#/">Calculateur de <span>Pourcentage</span></a>
+        <nav class="main" aria-label="Navigation principale">
+          <a href="#/" data-nav="home">Accueil</a>
+          <a href="#/articles" data-nav="articles">Articles</a>
+          <a href="#/faq" data-nav="faq">FAQ</a>
+          <a href="#/a-propos" data-nav="a-propos">À propos</a>
+          <a href="#/contact" data-nav="contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+
+      <!-- ================= ACCUEIL ================= -->
+      <section class="page" id="page-home">
+        <h1>Calculateur de pourcentage</h1>
+        <p class="lede">Tous vos calculs de pourcentage, résolus instantanément et gratuitement. Réductions, hausses de prix, notes, pourboires, intérêts : entrez vos nombres et le résultat s'affiche au fur et à mesure que vous tapez, sans aucun bouton à cliquer.</p>
+        <p>Si vous débutez, commencez par notre guide qui explique <a href="#/comment-calculer-un-pourcentage">comment calculer un pourcentage simplement</a>, avec la méthode de base et des exemples de la vie quotidienne. Pendant les soldes, notre article pour <a href="#/calculer-une-reduction">calculer une réduction pendant les soldes</a> vous aidera à vérifier en quelques secondes le prix que vous paierez réellement en caisse. Et pour comprendre une hausse de loyer, une baisse de salaire ou l'évolution d'un prix, lisez notre explication du <a href="#/augmentation-diminution-pourcentage">pourcentage d'augmentation et de diminution</a>.</p>
+
+        <!-- Calculateur 1 -->
+        <div class="calc" id="calc1">
+          <h2>Combien font X % de Y ?</h2>
+          <p class="desc">Le calcul le plus courant : trouver la part qu'un pourcentage représente dans un nombre. Utile pour une remise, un pourboire ou une commission.</p>
+          <div class="fields">
+            <div class="field">
+              <label for="c1-pct">Pourcentage</label>
+              <input type="text" inputmode="decimal" id="c1-pct" value="20" autocomplete="off" />
+            </div>
+            <div class="field"><span class="unit">% de</span></div>
+            <div class="field">
+              <label for="c1-base">Nombre</label>
+              <input type="text" inputmode="decimal" id="c1-base" value="150" autocomplete="off" />
+            </div>
+          </div>
+          <div class="result" id="c1-result" aria-live="polite"></div>
+          <p class="formula" id="c1-formula"></p>
+        </div>
+
+        <!-- Calculateur 2 -->
+        <div class="calc" id="calc2">
+          <h2>X représente quel pourcentage de Y ?</h2>
+          <p class="desc">Pour savoir quelle part un nombre représente par rapport à un total : une note sur 20, un budget déjà dépensé, un objectif atteint.</p>
+          <div class="fields">
+            <div class="field">
+              <label for="c2-part">Nombre (la part)</label>
+              <input type="text" inputmode="decimal" id="c2-part" value="45" autocomplete="off" />
+            </div>
+            <div class="field"><span class="unit">par rapport à</span></div>
+            <div class="field">
+              <label for="c2-total">Total</label>
+              <input type="text" inputmode="decimal" id="c2-total" value="180" autocomplete="off" />
+            </div>
+          </div>
+          <div class="result" id="c2-result" aria-live="polite"></div>
+          <p class="formula" id="c2-formula"></p>
+        </div>
+
+        <!-- Calculateur 3 -->
+        <div class="calc" id="calc3">
+          <h2>Variation en pourcentage entre deux valeurs</h2>
+          <p class="desc">Mesurez l'évolution entre une valeur de départ et une valeur d'arrivée : hausse d'un prix, baisse d'un poids, croissance d'un chiffre d'affaires.</p>
+          <div class="fields">
+            <div class="field">
+              <label for="c3-from">Valeur de départ</label>
+              <input type="text" inputmode="decimal" id="c3-from" value="80" autocomplete="off" />
+            </div>
+            <div class="field"><span class="unit">→</span></div>
+            <div class="field">
+              <label for="c3-to">Valeur d'arrivée</label>
+              <input type="text" inputmode="decimal" id="c3-to" value="100" autocomplete="off" />
+            </div>
+          </div>
+          <div class="result" id="c3-result" aria-live="polite"></div>
+          <p class="formula" id="c3-formula"></p>
+        </div>
+
+        <!-- Calculateur 4 -->
+        <div class="calc" id="calc4">
+          <h2>Prix après réduction</h2>
+          <p class="desc">Le calculateur des soldes : entrez le prix affiché et le pourcentage de remise pour connaître le prix final et le montant exact que vous économisez.</p>
+          <div class="fields">
+            <div class="field">
+              <label for="c4-price">Prix initial (€)</label>
+              <input type="text" inputmode="decimal" id="c4-price" value="80" autocomplete="off" />
+            </div>
+            <div class="field"><span class="unit">−</span></div>
+            <div class="field">
+              <label for="c4-off">Réduction (%)</label>
+              <input type="text" inputmode="decimal" id="c4-off" value="30" autocomplete="off" />
+            </div>
+          </div>
+          <div class="result" id="c4-result" aria-live="polite"></div>
+          <p class="formula" id="c4-formula"></p>
+        </div>
+
+        <!-- Calculateur 5 -->
+        <div class="calc" id="calc5">
+          <h2>Augmenter ou diminuer un nombre de X %</h2>
+          <p class="desc">Appliquez une hausse ou une baisse directement à un nombre : un salaire revalorisé, un prix majoré de la TVA, une quantité réduite.</p>
+          <div class="fields">
+            <div class="field">
+              <label for="c5-mode">Opération</label>
+              <select id="c5-mode">
+                <option value="up" selected>Augmenter</option>
+                <option value="down">Diminuer</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="c5-base">Nombre</label>
+              <input type="text" inputmode="decimal" id="c5-base" value="1200" autocomplete="off" />
+            </div>
+            <div class="field"><span class="unit">de</span></div>
+            <div class="field">
+              <label for="c5-pct">Pourcentage (%)</label>
+              <input type="text" inputmode="decimal" id="c5-pct" value="5" autocomplete="off" />
+            </div>
+          </div>
+          <div class="result" id="c5-result" aria-live="polite"></div>
+          <p class="formula" id="c5-formula"></p>
+        </div>
+
+        <h2>Pourquoi les pourcentages sont partout</h2>
+        <p>Un pourcentage est une façon de comparer des quantités de tailles très différentes sur une même échelle : celle de 100. Dire qu'un magasin accorde 30 % de remise, qu'un placement rapporte 4 % par an ou qu'un élève a obtenu 75 % de bonnes réponses, c'est à chaque fois ramener une situation à une fraction de 100, immédiatement compréhensible. C'est pour cela que les pourcentages servent aussi bien à comparer des prix qu'à suivre l'évolution d'un budget ou à lire un sondage.</p>
+        <p>La difficulté ne vient presque jamais du calcul lui-même, mais du choix de la bonne référence : 30 % de quoi, exactement ? Une augmentation de 10 % suivie d'une baisse de 10 % ne ramène pas au point de départ, et une remise de 50 % puis de 20 % n'équivaut pas à 70 % de remise. Nos articles ci-dessous détaillent ces pièges classiques : apprenez d'abord <a href="#/comment-calculer-un-pourcentage">comment calculer un pourcentage simplement</a>, puis entraînez-vous avec les soldes en apprenant à <a href="#/calculer-une-reduction">calculer une réduction</a>, et enfin maîtrisez le <a href="#/augmentation-diminution-pourcentage">pourcentage d'augmentation et de diminution</a> pour ne plus jamais confondre points et pour cent.</p>
+
+        <h2>Nos articles pour aller plus loin</h2>
+        <ul class="article-list">
+          <li>
+            <a class="title" href="#/comment-calculer-un-pourcentage">Comment calculer un pourcentage simplement</a>
+            <p>La méthode de base expliquée pas à pas, le produit en croix, les astuces de calcul mental et les erreurs les plus fréquentes à éviter.</p>
+          </li>
+          <li>
+            <a class="title" href="#/calculer-une-reduction">Calculer une réduction pendant les soldes</a>
+            <p>Comment lire une étiquette de soldes, trouver le prix final en une seule multiplication et comprendre les remises successives.</p>
+          </li>
+          <li>
+            <a class="title" href="#/augmentation-diminution-pourcentage">Pourcentage d'augmentation et de diminution expliqué</a>
+            <p>La formule de variation, des exemples concrets et l'explication du fameux piège : pourquoi +20 % puis −20 % ne ramène pas au départ.</p>
+          </li>
+        </ul>
+        <p>Retrouvez l'ensemble de nos guides sur la page <a href="#/articles">Articles</a>, et les réponses aux questions les plus fréquentes dans notre <a href="#/faq">foire aux questions</a>.</p>
+      </section>
+
+      <!-- ================= ARTICLES ================= -->
+      <section class="page" id="page-articles">
+        <h1>Articles</h1>
+        <p class="lede">Nos guides en français pour comprendre les pourcentages une bonne fois pour toutes, écrits en langage simple et illustrés d'exemples du quotidien.</p>
+        <ul class="article-list">
+          <li>
+            <a class="title" href="#/comment-calculer-un-pourcentage">Comment calculer un pourcentage simplement</a>
+            <p>Qu'est-ce qu'un pourcentage, la méthode de base, le produit en croix, les astuces pour calculer de tête et les erreurs à éviter.</p>
+          </li>
+          <li>
+            <a class="title" href="#/calculer-une-reduction">Calculer une réduction pendant les soldes</a>
+            <p>Lire une étiquette de soldes, calculer le prix après réduction, appliquer des remises successives et vérifier l'économie réelle.</p>
+          </li>
+          <li>
+            <a class="title" href="#/augmentation-diminution-pourcentage">Pourcentage d'augmentation et de diminution expliqué</a>
+            <p>La formule de variation entre deux valeurs, la différence entre points et pour cent, et le piège des hausses et baisses successives.</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ================= ARTICLE 1 ================= -->
+      <section class="page" id="page-article1">
+        <a class="backlink" href="#/articles">← Tous les articles</a>
+        <article class="prose">
+          <h1>Comment calculer un pourcentage simplement</h1>
+          <p>Le pourcentage fait partie de ces notions que l'on croise partout — sur les étiquettes des magasins, dans les bulletins de notes, sur les relevés bancaires — mais que beaucoup de personnes n'osent pas calculer de peur de se tromper. Bonne nouvelle : il n'existe qu'une seule idée à retenir, et tous les calculs de pourcentage en découlent. Ce guide vous la présente pas à pas, avec des exemples concrets et des astuces pour calculer de tête.</p>
+
+          <h2>Qu'est-ce qu'un pourcentage, au juste ?</h2>
+          <p>Le mot « pourcentage » vient de « pour cent » : il s'agit d'une fraction dont le dénominateur vaut toujours 100. Dire « 25 % » revient exactement à dire « 25 sur 100 », ou encore 0,25 en écriture décimale. Quand on annonce qu'un élève a réussi 75 % d'un exercice, cela signifie que, ramené à une échelle de 100 questions, il en aurait réussi 75. Le pourcentage ne donne donc pas une quantité absolue : il exprime une proportion, une part relative à un tout. C'est cette idée de « part d'un tout » qu'il faut garder en tête, car presque toutes les erreurs viennent d'un mauvais choix du tout de référence.</p>
+
+          <h2>La méthode de base : X % d'un nombre</h2>
+          <p>Le calcul le plus fréquent consiste à trouver combien font X % d'un nombre Y. La formule tient en une ligne : on multiplie le nombre par le pourcentage, puis on divise par 100. Par exemple, pour trouver 20 % de 150 : 150 × 20 = 3 000, puis 3 000 ÷ 100 = 30. Donc 20 % de 150 font 30. Vous pouvez vérifier ce calcul, et tous les autres, avec le premier calculateur de notre <a href="#/">page d'accueil</a>.</p>
+          <p>Il existe une variante tout aussi simple : transformez le pourcentage en nombre décimal en le divisant par 100 (20 % devient 0,20), puis multipliez directement. Ainsi, 150 × 0,20 = 30. Les deux méthodes donnent le même résultat ; choisissez celle qui vous semble la plus naturelle.</p>
+
+          <h2>Le produit en croix, l'outil passe-partout</h2>
+          <p>Si vous avez appris les proportions à l'école, le produit en croix (ou règle de trois) résout presque tous les problèmes de pourcentage. Le principe : si 100 correspond au tout, alors la part cherchée correspond au pourcentage voulu, et les deux rapports sont égaux. Par exemple, vous savez que 45 candidats sur 180 ont été admis et vous voulez le taux de réussite. On écrit : 45 est à 180 ce que le taux est à 100. Le taux vaut donc 45 × 100 ÷ 180 = 25 %. Les candidats admis représentent 25 % de l'ensemble. Cette même démarche sert à retrouver un pourcentage inconnu, une part inconnue ou un total inconnu : il suffit de placer les trois valeurs connues et de calculer la quatrième.</p>
+
+          <h2>Calculer de tête : les repères qui changent tout</h2>
+          <p>Quelques repères permettent de calculer la plupart des pourcentages courants sans calculatrice. Retenez d'abord que 10 % d'un nombre s'obtient en déplaçant la virgule d'un rang vers la gauche : 10 % de 250, c'est 25. À partir de là, tout devient facile : 20 % est le double de 10 % (donc 50), 5 % en est la moitié (donc 12,5), et 1 % s'obtient en déplaçant la virgule de deux rangs (2,5 pour 250). Pour 25 %, divisez simplement le nombre par 4 ; pour 50 %, divisez par 2 ; pour 75 %, prenez la moitié plus le quart. En combinant ces briques — par exemple 35 % = 25 % + 10 % — vous couvrirez la grande majorité des situations du quotidien, notamment pour estimer une remise avant même de lire notre guide pour <a href="#/calculer-une-reduction">calculer une réduction pendant les soldes</a>.</p>
+
+          <h2>Les erreurs les plus fréquentes</h2>
+          <p>La première erreur consiste à appliquer le pourcentage à la mauvaise base. Une augmentation de 10 % sur un prix de 200 € se calcule sur 200 €, mais si le prix monte ensuite à 220 €, une baisse de 10 % se calculera sur 220 € — et non sur 200 €. C'est exactement le mécanisme détaillé dans notre article sur le <a href="#/augmentation-diminution-pourcentage">pourcentage d'augmentation et de diminution</a>. La deuxième erreur est d'additionner des pourcentages qui ne portent pas sur la même base : deux remises de 20 % ne font pas 40 %, car la seconde s'applique au prix déjà réduit. Enfin, méfiez-vous des confusions entre « augmenter de 150 % » (le nombre devient 2,5 fois plus grand) et « atteindre 150 % » du nombre de départ (il devient 1,5 fois plus grand).</p>
+
+          <h2>En résumé</h2>
+          <p>Retenez trois réflexes : un pourcentage est une fraction de 100 ; pour trouver X % d'un nombre, multipliez ce nombre par X puis divisez par 100 ; et demandez-vous toujours « pourcentage de quoi ? » avant de calculer. Avec ces trois idées, les soldes, les notes, les pourboires et les statistiques perdent leur mystère. Et lorsque le calcul devient moins évident, nos calculateurs en <a href="#/">page d'accueil</a> font le travail en une fraction de seconde, formule à l'appui.</p>
+        </article>
+      </section>
+
+      <!-- ================= ARTICLE 2 ================= -->
+      <section class="page" id="page-article2">
+        <a class="backlink" href="#/articles">← Tous les articles</a>
+        <article class="prose">
+          <h1>Calculer une réduction pendant les soldes</h1>
+          <p>« −30 % », « −50 % », « 20 % supplémentaires » : pendant les soldes, les étiquettes rivalisent de promesses, mais le prix réellement payé en caisse n'est pas toujours celui que l'on imagine. Savoir calculer une réduction soi-même, c'est éviter les mauvaises surprises, repérer les fausses promotions et comparer deux offres en quelques secondes. Voici la méthode complète, du calcul le plus simple aux remises successives.</p>
+
+          <h2>Lire une étiquette de soldes</h2>
+          <p>Une réduction exprimée en pourcentage s'applique toujours au prix de référence affiché, sauf mention contraire. « −30 % » signifie que vous paierez 70 % du prix initial : le magasin retire 30 parts sur 100 du prix de départ. Attention aux présentations trompeuses : un prix « barré » peut correspondre à un prix de référence gonflé ou pratiqué très brièvement. La seule chose qui compte pour votre portefeuille, c'est le montant final — et c'est lui que nous allons calculer. Si les bases du pourcentage vous échappent encore, commencez par notre guide <a href="#/comment-calculer-un-pourcentage">comment calculer un pourcentage simplement</a>, puis revenez ici.</p>
+
+          <h2>La méthode en deux étapes</h2>
+          <p>La façon la plus intuitive de calculer un prix soldé se fait en deux temps. D'abord, calculez le montant de la réduction : prix initial × pourcentage ÷ 100. Pour une veste à 80 € soldée à −30 %, la réduction vaut 80 × 30 ÷ 100 = 24 €. Ensuite, soustrayez ce montant du prix initial : 80 − 24 = 56 €. Vous paierez donc 56 € et vous économiserez 24 €. C'est exactement le calcul qu'effectue le quatrième calculateur de notre <a href="#/">page d'accueil</a>, qui affiche à la fois le prix final et l'économie réalisée.</p>
+
+          <h2>L'astuce en une seule multiplication</h2>
+          <p>Il existe un raccourci élégant : plutôt que de calculer la remise puis de la soustraire, multipliez directement le prix par le pourcentage que vous paierez réellement. Si la réduction est de 30 %, vous payez 70 % du prix, soit un coefficient de 0,70. La veste à 80 € donne 80 × 0,70 = 56 €, en une seule opération. Le coefficient se construit toujours de la même manière : 1 moins le taux de réduction en décimal. Pour −20 %, multipliez par 0,80 ; pour −50 %, par 0,50 ; pour −15 %, par 0,85. Avec un peu d'habitude, vous estimerez un prix soldé de tête presque aussi vite qu'avec une calculatrice.</p>
+
+          <h2>Le piège des réductions successives</h2>
+          <p>« −40 % puis −20 % supplémentaires à la caisse » : faut-il s'attendre à 60 % de remise au total ? Non, et c'est le piège classique des soldes. La deuxième réduction s'applique au prix déjà réduit par la première, pas au prix de départ. Prenons un article à 100 € : après −40 %, il coûte 60 € ; la réduction supplémentaire de 20 % porte sur ces 60 €, soit 12 € de moins, pour un prix final de 48 €. La remise totale est donc de 52 %, et non de 60 %. La règle générale : les pourcentages successifs se multiplient (0,60 × 0,80 = 0,48), ils ne s'additionnent jamais. Ce mécanisme est le même que celui des hausses et baisses enchaînées, expliqué en détail dans notre article sur le <a href="#/augmentation-diminution-pourcentage">pourcentage d'augmentation et de diminution</a>.</p>
+
+          <h2>Vérifier l'économie réelle avant d'acheter</h2>
+          <p>Un pourcentage spectaculaire ne garantit pas une bonne affaire. −50 % sur un article dont le prix de référence a été relevé juste avant les soldes peut aboutir au prix habituel du reste de l'année. Trois réflexes vous protègent : comparez le prix final, et non le pourcentage, avec celui d'autres enseignes ; ramenez le prix à l'unité quand c'est possible (au kilo, au litre, à la pièce) ; et demandez-vous si vous auriez acheté l'article à son prix soldé sans connaître le prix de départ. Si la réponse est non, la « bonne affaire » n'en est probablement pas une. Enfin, gardez en tête que certaines remises s'appliquent hors taxes ou sur le moins cher de deux articles : lisez les petites lignes avant de passer en caisse, et vérifiez vos calculs avec nos outils en <a href="#/">page d'accueil</a>.</p>
+        </article>
+      </section>
+
+      <!-- ================= ARTICLE 3 ================= -->
+      <section class="page" id="page-article3">
+        <a class="backlink" href="#/articles">← Tous les articles</a>
+        <article class="prose">
+          <h1>Pourcentage d'augmentation et de diminution expliqué</h1>
+          <p>« Les prix ont augmenté de 4 % », « le chômage a baissé de 0,3 point », « votre loyer sera revalorisé de 2 % » : les variations en pourcentage sont partout dans l'actualité et dans la vie quotidienne. Pourtant, elles sont souvent mal comprises, et parfois présentées de façon à paraître plus grandes ou plus petites qu'elles ne le sont. Ce guide explique la formule de variation, la différence entre points et pour cent, et le piège le plus célèbre : pourquoi une hausse de 20 % suivie d'une baisse de 20 % ne ramène jamais au point de départ.</p>
+
+          <h2>La formule de variation</h2>
+          <p>Pour mesurer l'évolution entre une valeur de départ et une valeur d'arrivée, on calcule d'abord l'écart entre les deux, puis on rapporte cet écart à la valeur de départ, et on multiplie par 100. La formule s'écrit : (valeur d'arrivée − valeur de départ) ÷ valeur de départ × 100. Le signe du résultat indique le sens de l'évolution : positif, c'est une augmentation ; négatif, une diminution. Exemple : un abonnement passe de 40 € à 46 € par mois. L'écart est de 6 €, rapporté au départ : 6 ÷ 40 × 100 = 15 %. L'abonnement a donc augmenté de 15 %. Le troisième calculateur de notre <a href="#/">page d'accueil</a> effectue ce calcul instantanément.</p>
+
+          <h2>Un exemple de diminution</h2>
+          <p>La même formule fonctionne pour les baisses. Un salarié voit ses heures passer de 35 heures à 31,5 heures par semaine : l'écart est de −3,5 heures, soit −3,5 ÷ 35 × 100 = −10 %. Son temps de travail a diminué de 10 %. Notez que la valeur de référence est toujours la valeur de départ, jamais celle d'arrivée : c'est elle qui sert de « tout » dans la proportion. Si vous hésitez sur la notion de référence, relisez notre guide de base, <a href="#/comment-calculer-un-pourcentage">comment calculer un pourcentage simplement</a>, avant de poursuivre.</p>
+
+          <h2>Pourquoi +20 % puis −20 % ne ramène pas au départ</h2>
+          <p>C'est le piège le plus instructif des pourcentages. Prenons un prix de 100 €. Une hausse de 20 % le porte à 120 €. Une baisse de 20 % s'applique alors à 120 €, et non plus à 100 € : elle retire 24 €, ce qui donne 96 €. Résultat : après une hausse et une baisse du même taux, on se retrouve 4 € en dessous du départ. La raison est simple : le pourcentage ne vaut rien sans sa base, et la base a changé entre les deux opérations. La hausse portait sur 100, la baisse sur 120. Pour revenir exactement de 120 € à 100 €, il aurait fallu une baisse de 16,67 % (20 ÷ 120 × 100). Retenez donc qu'à taux égal, une baisse « pèse » toujours plus lourd qu'une hausse quand elle s'applique à un montant devenu plus grand — et inversement.</p>
+
+          <h2>Points de pourcentage ou pour cent ?</h2>
+          <p>Quand la quantité mesurée est elle-même un pourcentage, deux façons de décrire son évolution coexistent, et les confondre change tout. Si un taux d'intérêt passe de 2 % à 3 %, il a augmenté de 1 point de pourcentage : c'est l'écart arithmétique entre les deux taux. Mais en variation relative, il a augmenté de 50 %, car 1 ÷ 2 × 100 = 50 %. Les deux phrases sont exactes, mais elles ne racontent pas la même histoire. Les journaux et les discours publics choisissent parfois l'une ou l'autre selon l'effet recherché ; savoir les distinguer vous permet de lire ces chiffres avec recul. En règle générale, on parle en points pour comparer des taux, et en pour cent pour mesurer une évolution relative.</p>
+
+          <h2>Appliquer une augmentation ou une diminution</h2>
+          <p>Le calcul inverse est tout aussi utile : appliquer un taux connu à un montant. Pour augmenter un nombre de X %, multipliez-le par (1 + X ÷ 100) ; pour le diminuer, multipliez-le par (1 − X ÷ 100). Un loyer de 750 € revalorisé de 2 % devient 750 × 1,02 = 765 €. Un budget de 400 € réduit de 15 % devient 400 × 0,85 = 340 €. C'est la même logique que le coefficient utilisé pour les prix soldés, détaillé dans notre article pour <a href="#/calculer-une-reduction">calculer une réduction pendant les soldes</a>. Le cinquième calculateur de notre <a href="#/">page d'accueil</a> applique ces hausses et baisses en un instant, sans que vous ayez à manipuler les coefficients vous-même.</p>
+
+          <h2>Ce qu'il faut retenir</h2>
+          <p>Trois idées suffisent pour ne plus se tromper : la variation se rapporte toujours à la valeur de départ ; les hausses et baisses successives ne se compensent pas à taux égal, car la base change ; et il faut distinguer les points de pourcentage, qui mesurent un écart, des pour cent, qui mesurent une évolution relative. Avec ces repères, les chiffres des journaux, de votre banque ou de votre employeur deviennent nettement plus lisibles.</p>
+        </article>
+      </section>
+
+      <!-- ================= FAQ ================= -->
+      <section class="page" id="page-faq">
+        <h1>Foire aux questions</h1>
+        <p class="lede">Les questions que l'on nous pose le plus souvent sur les pourcentages, avec des réponses courtes et des exemples chiffrés. Pour appliquer ces formules sans calculatrice, utilisez les outils de la <a href="#/">page d'accueil</a>.</p>
+
+        <details class="faq">
+          <summary>Comment calculer 20 % de 150 ?</summary>
+          <div class="answer"><p>Multipliez 150 par 20, puis divisez par 100 : 150 × 20 ÷ 100 = 30. Donc 20 % de 150 font 30. La méthode complète est expliquée dans notre guide <a href="#/comment-calculer-un-pourcentage">comment calculer un pourcentage simplement</a>.</p></div>
+        </details>
+        <details class="faq">
+          <summary>Quelle est la formule de base d'un pourcentage ?</summary>
+          <div class="answer"><p>Pour trouver X % d'un nombre Y, la formule est : Y × X ÷ 100. Un pourcentage est simplement une fraction dont le dénominateur vaut 100 : 35 % signifie 35 sur 100, soit 0,35 en écriture décimale.</p></div>
+        </details>
+        <details class="faq">
+          <summary>Comment savoir quel pourcentage un nombre représente d'un autre ?</summary>
+          <div class="answer"><p>Divisez le premier nombre par le second, puis multipliez par 100. Par exemple, 45 par rapport à 180 : 45 ÷ 180 × 100 = 25 %. Donc 45 représente 25 % de 180. Le deuxième calculateur de la <a href="#/">page d'accueil</a> fait ce calcul pour vous.</p></div>
+        </details>
+        <details class="faq">
+          <summary>Comment calculer un prix après une réduction de 30 % ?</summary>
+          <div class="answer"><p>Calculez d'abord le montant de la réduction (prix × 30 ÷ 100), puis soustrayez-le du prix initial. Pour un article à 80 € : la réduction vaut 24 € et le prix final est de 56 €. Astuce rapide : multipliez directement le prix par 0,70. Plus de détails dans notre article pour <a href="#/calculer-une-reduction">calculer une réduction pendant les soldes</a>.</p></div>
+        </details>
+        <details class="faq">
+          <summary>Comment calculer une augmentation de salaire en pourcentage ?</summary>
+          <div class="answer"><p>Soustrayez l'ancien salaire du nouveau, divisez le résultat par l'ancien salaire, puis multipliez par 100. Un passage de 1 800 € à 1 890 € donne (90 ÷ 1 800) × 100 = 5 % d'augmentation. Retrouvez la formule complète dans notre article sur le <a href="#/augmentation-diminution-pourcentage">pourcentage d'augmentation et de diminution</a>.</p></div>
+        </details>
+        <details class="faq">
+          <summary>Quelle est la différence entre un point de pourcentage et un pourcentage ?</summary>
+          <div class="answer"><p>Un point de pourcentage mesure l'écart direct entre deux pourcentages : passer de 10 % à 12 %, c'est +2 points. En pourcentage relatif, cette même hausse représente +20 %, car 2 ÷ 10 × 100 = 20 %. Les deux mesures sont exactes, mais elles ne racontent pas la même chose.</p></div>
+        </details>
+        <details class="faq">
+          <summary>Comment retrouver un prix initial avant réduction ?</summary>
+          <div class="answer"><p>Divisez le prix réduit par (1 − taux de réduction). Un article payé 56 € après une remise de 30 % coûtait 56 ÷ 0,70 = 80 € avant la réduction. On appelle cela le calcul du pourcentage inverse.</p></div>
+        </details>
+        <details class="faq">
+          <summary>Comment calculer 10 % d'un nombre de tête ?</summary>
+          <div class="answer"><p>Déplacez simplement la virgule d'un rang vers la gauche : 10 % de 250, c'est 25. À partir de là, 20 % vaut le double (50) et 5 % la moitié (12,5). D'autres astuces de calcul mental sont présentées dans notre guide <a href="#/comment-calculer-un-pourcentage">comment calculer un pourcentage simplement</a>.</p></div>
+        </details>
+        <details class="faq">
+          <summary>Un pourcentage peut-il dépasser 100 % ?</summary>
+          <div class="answer"><p>Oui. 100 % représente le tout ; au-delà, la quantité dépasse la référence. Par exemple, 250 représente 125 % de 200, et un prix qui passe de 50 € à 120 € a augmenté de 140 %. En revanche, une diminution ne peut pas dépasser 100 % pour une quantité positive : on ne peut pas perdre plus que ce que l'on a.</p></div>
+        </details>
+        <details class="faq">
+          <summary>Comment retrouver le prix hors taxe à partir d'un prix TTC ?</summary>
+          <div class="answer"><p>Divisez le prix TTC par (1 + taux de TVA). Avec une TVA à 20 %, un prix de 120 € TTC correspond à 120 ÷ 1,20 = 100 € HT, soit 20 € de TVA. Pour une TVA à 5,5 %, divisez par 1,055 ; pour 10 %, par 1,10.</p></div>
+        </details>
+      </section>
+
+      <!-- ================= À PROPOS ================= -->
+      <section class="page" id="page-a-propos">
+        <article class="prose">
+          <h1>À propos</h1>
+          <p>Calculateur de Pourcentage est un site gratuit entièrement consacré à une question simple : rendre les pourcentages faciles pour tout le monde. Les pourcentages interviennent dans les soldes, les factures, les notes, les statistiques et les décisions d'argent du quotidien, mais les formules sont souvent présentées de façon inutilement compliquée. Nous avons donc construit des outils qui donnent le résultat instantanément, accompagné de la formule écrite en toutes lettres, pour que chacun comprenne ce qu'il calcule au lieu de simplement le recopier.</p>
+          <p>Le site propose cinq calculateurs couvrant les situations les plus fréquentes : trouver le pourcentage d'un nombre, déterminer la part qu'un nombre représente dans un total, mesurer une variation entre deux valeurs, calculer un prix après réduction et appliquer une augmentation ou une diminution. Tous les calculs se déroulent directement dans votre navigateur : aucun nombre saisi n'est envoyé à un serveur ni conservé.</p>
+          <p>En complément des outils, nos <a href="#/articles">articles</a> expliquent les notions en langage clair, avec des exemples tirés de la vie réelle : les courses, les soldes, le loyer, le salaire. Ils sont écrits spécialement pour ce site et relus avec soin. Si vous repérez une erreur ou si vous souhaitez nous suggérer un nouvel outil, écrivez-nous via la page <a href="#/contact">Contact</a> : chaque message est lu et les corrections sont apportées rapidement.</p>
+        </article>
+      </section>
+
+      <!-- ================= CONTACT ================= -->
+      <section class="page" id="page-contact">
+        <article class="prose">
+          <h1>Contact</h1>
+          <p>Une question sur un calcul, une erreur à signaler dans un article, une idée de nouvel outil de pourcentage ? Écrivez-nous par e-mail : nous lisons tous les messages et nous répondons généralement sous quelques jours ouvrés.</p>
+          <p><a class="mailbtn" href="mailto:contact@pourcentagehub.github.io">contact@pourcentagehub.github.io</a></p>
+          <p>Pour nous aider à vous répondre vite, précisez si possible le calculateur ou l'article concerné, les valeurs que vous avez saisies et le résultat que vous attendiez. Attention : nous pouvons expliquer une méthode de calcul, mais nous ne fournissons pas de conseil financier, fiscal ou juridique personnalisé. Pour ce type de question, rapprochez-vous d'un professionnel qualifié.</p>
+        </article>
+      </section>
+
+      <!-- ================= CONFIDENTIALITÉ ================= -->
+      <section class="page" id="page-confidentialite">
+        <article class="prose">
+          <h1>Politique de confidentialité</h1>
+          <p>Dernière mise à jour : 2026.</p>
+          <p>Calculateur de Pourcentage est un site statique qui fonctionne entièrement dans votre navigateur. Les calculateurs n'envoient aucune donnée vers un serveur : les nombres que vous saisissez restent sur votre appareil et disparaissent dès que vous fermez la page. Nous ne créons pas de compte utilisateur, nous ne demandons ni nom, ni adresse, ni aucune information personnelle pour utiliser les outils.</p>
+          <h2>Cookies et mesure d'audience</h2>
+          <p>Le site n'installe pas de cookies de suivi qui lui soient propres. Si des statistiques de visite anonymisées sont utilisées à l'avenir pour comprendre quelles pages sont utiles, elles le seront sous une forme agrégée qui ne permet pas d'identifier un visiteur en particulier. Votre navigateur peut également conserver localement certaines préférences d'affichage ; vous pouvez les effacer à tout moment depuis les réglages de votre navigateur.</p>
+          <h2>Messages envoyés par e-mail</h2>
+          <p>Si vous nous écrivez à l'adresse de la page <a href="#/contact">Contact</a>, votre message et votre adresse e-mail sont utilisés uniquement pour vous répondre. Ils ne sont ni vendus, ni transmis à des tiers à des fins commerciales.</p>
+          <h2>Vos droits</h2>
+          <p>Conformément au règlement général sur la protection des données (RGPD), vous disposez d'un droit d'accès, de rectification et d'effacement des informations que vous nous auriez transmises, par exemple dans un e-mail. Pour exercer ces droits, écrivez-nous à contact@pourcentagehub.github.io.</p>
+          <h2>Modifications</h2>
+          <p>Cette politique peut évoluer pour refléter des changements du site. La version en vigueur est toujours celle publiée sur cette page.</p>
+        </article>
+      </section>
+
+      <!-- ================= CONDITIONS ================= -->
+      <section class="page" id="page-conditions">
+        <article class="prose">
+          <h1>Conditions d'utilisation</h1>
+          <p>Dernière mise à jour : 2026.</p>
+          <p>En utilisant Calculateur de Pourcentage, vous acceptez les présentes conditions. Le site met gratuitement à disposition des outils de calcul de pourcentage et des articles explicatifs, destinés à un usage personnel et informatif.</p>
+          <h2>Utilisation des outils</h2>
+          <p>Les résultats fournis par les calculateurs sont calculés à partir des valeurs que vous saisissez. Il vous appartient de vérifier les nombres entrés et l'adéquation de la formule à votre situation. Les arrondis d'affichage peuvent entraîner de très légers écarts avec un calcul mené sans arrondi intermédiaire.</p>
+          <h2>Contenu du site</h2>
+          <p>Les textes publiés sur ce site sont originaux et protégés par le droit d'auteur. Vous pouvez les citer en mentionnant la source et en plaçant un lien vers la page concernée. Toute reproduction intégrale sans autorisation préalable est interdite.</p>
+          <h2>Responsabilité</h2>
+          <p>Nous nous efforçons de maintenir des formules exactes et des articles à jour, sans pouvoir garantir l'absence totale d'erreur. Le site ne saurait être tenu responsable des décisions prises sur la seule base de ses résultats, notamment en matière financière, fiscale ou commerciale. Pour ces usages, faites vérifier vos calculs par un professionnel.</p>
+          <h2>Évolution du service</h2>
+          <p>Les outils et articles peuvent être modifiés, complétés ou retirés à tout moment, sans préavis. Les présentes conditions peuvent également être mises à jour ; la version publiée sur cette page fait foi.</p>
+        </article>
+      </section>
+
+      <!-- ================= AVERTISSEMENT ================= -->
+      <section class="page" id="page-avertissement">
+        <article class="prose">
+          <h1>Avertissement</h1>
+          <p>Les informations et les outils proposés sur Calculateur de Pourcentage le sont à titre purement informatif et pédagogique. Ils visent à expliquer et à faciliter des calculs arithmétiques courants ; ils ne constituent en aucun cas un conseil financier, fiscal, comptable, juridique ou d'investissement.</p>
+          <p>Les taux mentionnés dans nos exemples — TVA, intérêts, remises commerciales, revalorisations — sont des illustrations choisies pour la clarté des calculs. Les taux réellement applicables à votre situation peuvent différer selon votre pays, votre secteur d'activité et la réglementation en vigueur à la date de votre calcul. Avant toute décision engageant de l'argent ou une obligation légale, vérifiez les taux officiels et, si nécessaire, consultez un professionnel qualifié.</p>
+          <p>Malgré le soin apporté à la rédaction et aux tests des calculateurs, une erreur reste possible. Si vous en repérez une, merci de nous la signaler via la page <a href="#/contact">Contact</a> afin que nous puissions la corriger au plus vite.</p>
+        </article>
+      </section>
+
+    </main>
+
+    <footer class="site">
+      <div class="wrap">
+        <nav aria-label="Liens de bas de page">
+          <a href="#/articles">Articles</a>
+          <a href="#/faq">FAQ</a>
+          <a href="#/a-propos">À propos</a>
+          <a href="#/contact">Contact</a>
+          <a href="#/confidentialite">Politique de confidentialité</a>
+          <a href="#/conditions">Conditions d'utilisation</a>
+          <a href="#/avertissement">Avertissement</a>
+        </nav>
+        <p>© 2026 Calculateur de Pourcentage. Tous les calculs sont effectués dans votre navigateur.</p>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        "use strict";
+
+        /* ---------- Formatage français ---------- */
+        function parseNum(str) {
+          if (str === null || str === undefined) return NaN;
+          var s = String(str).replace(/\s/g, "").replace(",", ".");
+          if (s === "" || s === "-" || s === ".") return NaN;
+          var n = parseFloat(s);
+          return isNaN(n) ? NaN : n;
+        }
+        function fmt(n, decimals) {
+          if (typeof decimals !== "number") decimals = 2;
+          return n.toLocaleString("fr-FR", {
+            minimumFractionDigits: 0,
+            maximumFractionDigits: decimals
+          });
+        }
+        function fmtMoney(n) {
+          return n.toLocaleString("fr-FR", {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2
+          }) + " €";
+        }
+
+        function bind(ids, fn) {
+          var els = ids.map(function (id) { return document.getElementById(id); });
+          els.forEach(function (el) {
+            if (!el) return;
+            el.addEventListener("input", fn);
+            el.addEventListener("change", fn);
+          });
+          fn();
+          return els;
+        }
+
+        /* ---------- Calculateur 1 : X % de Y ---------- */
+        bind(["c1-pct", "c1-base"], function () {
+          var pct = parseNum(document.getElementById("c1-pct").value);
+          var base = parseNum(document.getElementById("c1-base").value);
+          var res = document.getElementById("c1-result");
+          var form = document.getElementById("c1-formula");
+          if (isNaN(pct) || isNaN(base)) {
+            res.textContent = "Entrez un pourcentage et un nombre pour voir le résultat.";
+            form.textContent = "";
+            return;
+          }
+          var r = base * pct / 100;
+          res.textContent = fmt(pct) + " % de " + fmt(base) + " = " + fmt(r);
+          form.textContent = "Formule : on multiplie " + fmt(base) + " par " + fmt(pct) + ", puis on divise par 100 — soit " + fmt(base) + " × " + fmt(pct) + " ÷ 100 = " + fmt(r) + ".";
+        });
+
+        /* ---------- Calculateur 2 : X représente quel % de Y ---------- */
+        bind(["c2-part", "c2-total"], function () {
+          var part = parseNum(document.getElementById("c2-part").value);
+          var total = parseNum(document.getElementById("c2-total").value);
+          var res = document.getElementById("c2-result");
+          var form = document.getElementById("c2-formula");
+          if (isNaN(part) || isNaN(total)) {
+            res.textContent = "Entrez la part et le total pour voir le résultat.";
+            form.textContent = "";
+            return;
+          }
+          if (total === 0) {
+            res.textContent = "Le total ne peut pas être zéro : la division par zéro est impossible.";
+            form.textContent = "";
+            return;
+          }
+          var r = part / total * 100;
+          res.textContent = fmt(part) + " représente " + fmt(r) + " % de " + fmt(total);
+          form.textContent = "Formule : on divise " + fmt(part) + " par " + fmt(total) + ", puis on multiplie par 100 — soit (" + fmt(part) + " ÷ " + fmt(total) + ") × 100 = " + fmt(r) + " %.";
+        });
+
+        /* ---------- Calculateur 3 : variation ---------- */
+        bind(["c3-from", "c3-to"], function () {
+          var from = parseNum(document.getElementById("c3-from").value);
+          var to = parseNum(document.getElementById("c3-to").value);
+          var res = document.getElementById("c3-result");
+          var form = document.getElementById("c3-formula");
+          if (isNaN(from) || isNaN(to)) {
+            res.textContent = "Entrez la valeur de départ et la valeur d'arrivée pour voir le résultat.";
+            form.textContent = "";
+            return;
+          }
+          if (from === 0) {
+            res.textContent = "La valeur de départ ne peut pas être zéro : la variation n'est pas définie.";
+            form.textContent = "";
+            return;
+          }
+          var change = (to - from) / from * 100;
+          var absDiff = to - from;
+          var word = change > 0 ? "augmentation" : (change < 0 ? "diminution" : "aucune variation");
+          var sign = change > 0 ? "+" : "";
+          res.innerHTML = "";
+          var main = document.createTextNode("Variation : " + sign + fmt(change) + " % (" + word + ")");
+          res.appendChild(main);
+          var sub = document.createElement("span");
+          sub.className = "sub";
+          sub.textContent = "Écart absolu : " + (absDiff > 0 ? "+" : "") + fmt(absDiff) + " (de " + fmt(from) + " à " + fmt(to) + ")";
+          res.appendChild(sub);
+          form.textContent = "Formule : on soustrait la valeur de départ de la valeur d'arrivée, on divise par la valeur de départ, puis on multiplie par 100 — soit (" + fmt(to) + " − " + fmt(from) + ") ÷ " + fmt(from) + " × 100 = " + sign + fmt(change) + " %.";
+        });
+
+        /* ---------- Calculateur 4 : prix après réduction ---------- */
+        bind(["c4-price", "c4-off"], function () {
+          var price = parseNum(document.getElementById("c4-price").value);
+          var off = parseNum(document.getElementById("c4-off").value);
+          var res = document.getElementById("c4-result");
+          var form = document.getElementById("c4-formula");
+          if (isNaN(price) || isNaN(off)) {
+            res.textContent = "Entrez le prix initial et la réduction pour voir le résultat.";
+            form.textContent = "";
+            return;
+          }
+          var saved = price * off / 100;
+          var finalPrice = price - saved;
+          res.innerHTML = "";
+          res.appendChild(document.createTextNode("Prix après réduction : " + fmtMoney(finalPrice)));
+          var sub = document.createElement("span");
+          sub.className = "sub";
+          sub.textContent = "Vous économisez " + fmtMoney(saved) + " sur le prix initial de " + fmtMoney(price) + ".";
+          res.appendChild(sub);
+          form.textContent = "Formule : la réduction vaut " + fmtMoney(price) + " × " + fmt(off) + " ÷ 100 = " + fmtMoney(saved) + ", et le prix final est le prix initial moins cette réduction.";
+        });
+
+        /* ---------- Calculateur 5 : augmenter / diminuer ---------- */
+        bind(["c5-mode", "c5-base", "c5-pct"], function () {
+          var mode = document.getElementById("c5-mode").value;
+          var base = parseNum(document.getElementById("c5-base").value);
+          var pct = parseNum(document.getElementById("c5-pct").value);
+          var res = document.getElementById("c5-result");
+          var form = document.getElementById("c5-formula");
+          if (isNaN(base) || isNaN(pct)) {
+            res.textContent = "Entrez un nombre et un pourcentage pour voir le résultat.";
+            form.textContent = "";
+            return;
+          }
+          var amount = base * pct / 100;
+          var r = mode === "up" ? base + amount : base - amount;
+          var verb = mode === "up" ? "augmenté" : "diminué";
+          var coef = mode === "up" ? (1 + pct / 100) : (1 - pct / 100);
+          res.textContent = fmt(base) + " " + verb + " de " + fmt(pct) + " % = " + fmt(r);
+          form.textContent = "Formule : on multiplie " + fmt(base) + " par " + fmt(coef, 4) + " — c'est-à-dire qu'on " + (mode === "up" ? "ajoute" : "retire") + " " + fmt(pct) + " % de " + fmt(base) + ", soit " + fmt(amount) + ".";
+        });
+
+        /* ---------- Routeur par hash ---------- */
+        var routes = {
+          "": "home", "/": "home",
+          "/articles": "articles",
+          "/comment-calculer-un-pourcentage": "article1",
+          "/calculer-une-reduction": "article2",
+          "/augmentation-diminution-pourcentage": "article3",
+          "/faq": "faq",
+          "/a-propos": "a-propos",
+          "/contact": "contact",
+          "/confidentialite": "confidentialite",
+          "/conditions": "conditions",
+          "/avertissement": "avertissement"
+        };
+        var titles = {
+          home: "Calculateur de Pourcentage — Calculs de pourcentage gratuits en ligne",
+          articles: "Articles — Calculateur de Pourcentage",
+          article1: "Comment calculer un pourcentage simplement — Calculateur de Pourcentage",
+          article2: "Calculer une réduction pendant les soldes — Calculateur de Pourcentage",
+          article3: "Pourcentage d'augmentation et de diminution expliqué — Calculateur de Pourcentage",
+          faq: "Foire aux questions — Calculateur de Pourcentage",
+          "a-propos": "À propos — Calculateur de Pourcentage",
+          contact: "Contact — Calculateur de Pourcentage",
+          confidentialite: "Politique de confidentialité — Calculateur de Pourcentage",
+          conditions: "Conditions d'utilisation — Calculateur de Pourcentage",
+          avertissement: "Avertissement — Calculateur de Pourcentage"
+        };
+        var navMap = { home: "home", articles: "articles", article1: "articles", article2: "articles", article3: "articles", faq: "faq", "a-propos": "a-propos", contact: "contact" };
+
+        function route() {
+          var hash = window.location.hash.replace(/^#/, "");
+          var key = routes.hasOwnProperty(hash) ? routes[hash] : "home";
+          var pages = document.querySelectorAll(".page");
+          for (var i = 0; i < pages.length; i++) {
+            pages[i].classList.toggle("active", pages[i].id === "page-" + key);
+          }
+          var navLinks = document.querySelectorAll("nav.main a[data-nav]");
+          for (var j = 0; j < navLinks.length; j++) {
+            if (navLinks[j].getAttribute("data-nav") === navMap[key]) {
+              navLinks[j].setAttribute("aria-current", "page");
+            } else {
+              navLinks[j].removeAttribute("aria-current");
+            }
+          }
+          document.title = titles[key] || titles.home;
+          window.scrollTo(0, 0);
+        }
+        window.addEventListener("hashchange", route);
+        route();
+      })();
+    </script>
+  </body>
+</html>

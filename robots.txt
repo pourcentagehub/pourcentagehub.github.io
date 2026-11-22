@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pourcentagehub.github.io/sitemap.xml
